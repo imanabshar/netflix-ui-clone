@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/* Top Section */
+.top {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top .box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.54;
+}
+
+/* Navigation Bar */
+.top nav {
+    max-width: 70vw;
+    height: 60px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+
+.top nav img {
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+.top nav .button {
+    position: relative;
+    z-index: 10;
+}
+
+.top .nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button {
+    padding: 3px 24px;
+    background-color: rgba(108, 108, 108, 0.4);
+    position: relative;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.sign-button {
+    padding: 3px 16px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.top .centre {
+    max-width: 80vw;
+    margin: auto;
+    height: calc(100% - 60px - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    gap: 10px;
+    padding: 0 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.top .centre h1 {
+    z-index: 10;
+    font-size: 45px;
+}
+
+.top .centre p {
+    z-index: 10;
+    font-size: 22px;
+}
+
+.top .centre :nth-child(3) {
+    font-size: 20px;
+}
+
+.centre-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.button-red {
+    padding: 6px 20px;
+    font-size: 16px;
+    border: 1px solid red;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+input {
+    padding: 7px 10px 8px 14px;
+    width: 300px;
+    font-size: 12px;
+    border: 1px solid rgba(169, 156, 156, 0.5);
+    background-color: rgba(15, 15, 15, 0.7);
+    color: aliceblue;
+}
+
+input:hover {
+    font-size: 12px;
+    padding: 12px 120px 8px 14px;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(124, 122, 122);
+}
+
+/* Description */
+.description {
+    display: flex;
+    justify-content: center;
+    max-width: 75vw;
+    align-items: center;
+    margin: auto;
+}
+
+.description .content h1 {
+    color: aliceblue;
+}
+
+.description .content p {
+    color: aliceblue;
+    padding: 20px 0;
+}
+
+.description-image img {
+    max-width: 37vw;
+}
+
+/* faq section */
+.faq {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 10px;
+    padding: 30px;
+    color: white;
+}
+
+.faq h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.faq_box {
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #313131;
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+
+.faq_box:hover {
+    background-color: #1f1e1e;
+    color: white;
+}
+
+.email-text {
+    max-width: 70vw;
+    margin: auto;
+    padding: 40px;
+}
+
+.btn {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    color: aliceblue;
+    padding: 34px;
+    max-width: 75vw;
+    margin: auto;
+    font-size: 14px;
+    color: rgb(165, 168, 170);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a {
+    font-size: 14px;
+    color: rgb(175, 176, 178);
+    margin: 12px 0px;
+    cursor: pointer;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 780px) {
+
+    /* For navbar  */
+    .top nav {
+        max-width: 100vw;
+    }
+
+    .top nav img {
+        width: 100px;
+    }
+
+    /* For Mid Part of Front Page  */
+    .top .centre {
+        max-width: 100vw;
+    }
+
+    .top .centre h1 {
+        font-size: 30px;
+    }
+
+    .top .centre p,
+    .top .centre :nth-child(3) {
+        font-size: 16px;
+    }
+
+    .description {
+        max-width: 85vw;
+        flex-wrap: wrap;
+        padding: 35px 0;
+    }
+
+    .faq {
+        max-width: 100vw;
+    }
+
+    .faq h1 {
+        font-size: 20px;
+    }
+
+    .faq_box {
+        font-size: 18px;
+    }
+
+    .email-text {
+        max-width: 90vw;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+}
